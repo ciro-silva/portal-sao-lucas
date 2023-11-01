@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	border: border-box;
+	font-family: 'Poppins', sans-serif;
+    
+}
+
+:root {
+    --background: #F6F7FB;
+    --title: #415065;
+    --subtitle: #6F6F6F;
+    --bluedark: #004186;
+    --bluelight: #4194F4;
+    --poppins: 'Poppins', sans-serif;
+}
+
+html, body {
+    background: var(--background);
+}
+
+/* TOP-----------------------------------------------------------------------------------------------*/
+.container-top {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(288deg, rgba(159, 191, 216, 0.20) 0%, rgba(186, 211, 231, 0.20) 100%);
+}
+
+.container-top-items {
+    width: 92%;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.8rem;
+}
+
+/* TOP LEFT--------------------------------------------------------*/
+.container-top-items-left {
+    display: flex;
+    align-items: center;
+}
+
+/* TOP LEFT - LOGO*/
+.logo-portal {
+    padding-right: 1rem;
+}
+
+.logo-portal img {
+    width: 140px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+/* TOP LEFT - SEARCH-BOX*/
+.search-box{
+    position: relative;
+    height: 40px;
+    max-width: 550px;
+    width: 100%;
+    margin: 0 20px;
+}
+  
+.search-box input{
+    height: 100%;
+    width: 150px;
+    outline: none;
+    background: #F5F6FA;
+    border: 2px solid #EFEEF1;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 0 15px;
+}
+  
+.search-box .bx-search{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: var(--bluelight);
+    right: 5px;
+    top: 55%;
+    transform: translateY(-50%);
+    border-radius: 4px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.search-box .bx-search:hover {
+    background: var(--bluedark);
+}
+
+.search-box input::placeholder {
+    color: #a8a8a8;
+}
+
+/* TOP RIGHT--------------------------------------------------------*/
+.container-top-items-right {
+    display: flex;
+    align-items: center;
+}
+
+/* TOP - LOGOS*/
+.logos {
+    width: 200px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+
+.container-logos {
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* TOP - CARD INFO*/
+.card-info-items {
+    width: 200px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient( 45deg, #378DEF, #57a5ff);
+    border-radius: 6px;
+}
+
+.timer {
+    display: flex;
+    
+}
+
+.timer h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff; 
+}
+
+#temp{
+    color: #fff;
+    font-weight: normal;
+}
+
+.city {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 0.8rem;
+}
+
+.clima {
+    display: flex;
+    flex-direction: column;
+}
+
+.clima h2 {
+    font-size: 0.7rem;
+    color: #fff;
+	display: flex;
+    line-height: 0.5rem;
+}
+
+#umidad {
+    display: none;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/* PAINEL TOP*/
+.container-painel-top {
+    width: 92%;
+    height: 205px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 0.8rem;
+    margin-top: -70px;
+    
+}
+
+.painel-Card {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    background: white;
+    
+}
+
+.painel-itens-left {
+    width: 40%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.painel-itens-right {
+    width: 60%;
+    height: 200px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    
+}
+
+  
+.painel-Title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--title);
+    z-index: 2;
+    padding: 40px 0px 0px 50px;
+}
+  
+.painelDesc {
+    font-size: 0.8rem;
+    color: var(--subtitle);
+    z-index: 2;
+    padding: 0px 50px 0px 50px;
+}
+  
+.painelDesc a {
+    color: var(--title);
+}
+  
+
+/*--------------------------------------------------------------------------------------------------*/
+/*BTN CONTATO -----------*/
+
+.container-add-contato {
+    width: 100%;
+    height: 100px;
+
+}
+
+.container-addcontato-items  {
+    width: 92%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+/*Dialog Styles*/
+dialog {
+    padding: 1rem 3rem;
+    background: white;
+    max-width: 400px;
+    padding-top: 2rem;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+    -webkit-animation: fadeIn 1s ease both;
+    animation: fadeIn 1s ease both;
+}
+
+
+dialog::-webkit-backdrop { /*background do MODAL*/
+    -webkit-animation: fadeIn 1s ease both;
+    animation: fadeIn 1s ease both;
+    background: rgba(255, 255, 255, 0.4);
+    z-index: 2;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+
+dialog::backdrop {
+    -webkit-animation: fadeIn 1s ease both;
+    animation: fadeIn 1s ease both;
+    background: rgba(255, 255, 255, 0.4);
+    z-index: 2;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+
+dialog .x {
+    filter: grayscale(1);
+    border: none;
+    background: none;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    transition: ease filter, transform 0.3s;
+    cursor: pointer;
+    transform-origin: center;
+}
+
+dialog .x:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+dialog h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+dialog p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    padding: 0.5rem 0;
+}
+
+dialog p a:visited {
+    color: rgb(var(--vs-primary));
+}
+
+/*General Styles*/
+button.primary {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #fff !important;
+    background: var(--bluelight);
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background-color 0.1s ease;
+    box-sizing: border-box;
+    transition: all 0.25s ease;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -10px rgb(var(--vs-primary)/50%);
+    font-weight: 600;
+}
+
+button.primary:hover {
+    box-shadow: 0 20px 20px -10px (var(--bluedark)/50%);
+    transform: translateY(-1px);
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+

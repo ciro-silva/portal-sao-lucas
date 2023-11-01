@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"> 
+
+	<head>
+		<meta charset="UTF-8"/> 
+		<title>Portal São Lucas - Blog</title> 
+		<link href="../pages/css/ramais-hmar.css" rel="stylesheet"/>
+        <link href="./css/blog.css" rel="stylesheet"/>  
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<script src="https://kit.fontawesome.com/4cb80f45e5.js" crossorigin="anonymous"></script> 
+		<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/pen.css' rel='stylesheet'>
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/options.css' rel='stylesheet'>
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/trash.css' rel='stylesheet'>
+        <link rel="shortcut icon" href="./assets/icons/inicio/sao-lucas-icon.png"> 
+	</head>
+	
+<body>
+
+<!--TOP-------------------------------------------------------------------------->
+
+    <div class="container-top">
+
+        <div class="container-top-items">
+
+            <div class="container-top-items-left">
+                <!--LOGO PORTAL HMAR ===========================-->
+                <div class="logo-portal">
+                    <a href="../index.html">
+                    <img src="./assets/logo-portal-sao-lucas.png" alt="logo do portal" class="logo">
+                    </a>
+                </div><!--logo-portal-->
+    
+                
+            </div><!--container-top-items-left-->    
+
+            <div class="container-top-items-right">
+                <!--LOGOS ARTHURRAMOS E REDE DOR ================-->
+                <div class="logos">
+
+                    <div class="container-logos">
+
+                        <a href="https://www.rededorsaoluiz.com.br/hospital/sao-lucas" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/logo-sao-lucas.png" alt="logo do portal">
+                        </a>
+                        <a href="https://www.rededorsaoluiz.com.br/" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/logo-rede-dor .png" alt="logo do portal">
+                        </a>
+                    </div><!--container-logos-->
+                    
+                </div><!--logos-->
+    
+                <!--CARD INFO ===================================-->
+                <div class="card-info">
+                    <div class="card-info-items">
+
+                        <div class="timer">
+                            <h1 id="horas">22</h1>
+                            <h1 id="pontos">:</h1>
+                            <h1 id="minutos">22</h1>
+                        </div><!--timer-->
+
+                        <div class="clima" id="temperatura">
+                            <h1 class="city"></h1>
+                            <h2><span id="temp"></span>°C<span id='umidad'> um</span></h2>
+                        </div><!--clima-->
+
+                    </div><!--card-info-items-->
+                </div><!--card-info-->  
+
+            </div><!--container-top-items-right-->
+            
+        </div><!--container-top-items-->
+
+    </div><!--container-top-->
+
+<!----------------------------------------------------------------------------------------------->
+
+
+    <!--PAINEL TOP ============================================-->
+    <!--PAINEL TOP ================-->
+    <div class="container-painel-top">
+
+        <div class="painel-Card">
+
+            <div class="painel-itens-left">
+                <p class="painel-Title">Blog</p>
+                <p class="painelDesc">Esse é o <strong>Blog</strong> do Portal São Lucas, aqui serão compartilhados avisos, campanhas e outros assuntos tratados pela instituição.</p>
+            </div><!--painel=itens-left-->
+
+            <div class="painel-itens-right">
+                <div class="painel-img">
+                    <img src="./assets/blog-banner-right.png" alt="logo do portal" target="_blank" rel="noopener noreferrer">
+                </div><!--painel-img-->
+            </div><!--painel=itens-right-->
+
+          </div><!--painel-Card-->
+          
+    </div><!--container-painel-top-->
+<!----------------------------------------------------------------------------------------------->
+
+<!--TABS ------------------------------------------------------------------------------------------->
+
+    <!--TABS ===================================-->
+    <div class="container-tabs">
+
+        <div class="container">
+            <div class="tabs">
+
+                <input type="radio" id="radio-1" name="tabs" onclick="tabNavgationInicio()" />
+                <label class="tab" for="radio-1">Início</label>
+
+                <label class="tab" for="radio-2">Utilitários</label>
+                <input type="radio" id="radio-2" name="tabs" onclick="tabNavgationUtilitarios()"/>
+
+                <label class="tab" for="radio-3">Blog</label>
+                <input type="radio" id="radio-3" name="tabs" checked/>
+                
+                <span class="glider"></span>
+
+            </div><!--tabs-->
+        </div><!--container-->
+
+    </div><!--container-tabs-->
+
+
+<!--POSTS DO BLOG ---------------------------------------------------------------------------------------->
+
+    <!--BLOG ===================================-->
+    <div class="blog-container">
+
+        <div class="blog-header">
+            <div class="blog-cover">
+                <!--
+               <img src="./assets/blog/nutrição-parada-sistema.png">
+            -->
+            </div><!--blog-cover-->
+        </div><!--blog-header-->
+
+        <div class="blog-body">
+            <div class="blog-title">
+                <h1>Atualização de Servidores</h1>
+            </div><!--blog-title-->
+            <div class="blog-summary">
+                <p>Os sistemas da <strong>Balança da Lavanderia e Identificação do Paciente da Nutrição</strong> passarão por uma manutenção de otimização e correção de problemas, 
+                    o serviço será acompanhado pela coordenação da NTI e deverá ter duração aproximada de 1h (uma hora), no entanto, 
+                    poderá se extender por um tempo maior em caso de intercorrências.<br><br>Deverão ser adotadas as <strong>medidas de 
+                    contingência do setor</strong> de forma a dar continuidade aos serviços impactados por essa aplicação.<br><br>Todos 
+                    os setores impactados foram devidamente e antecipadamente comunicados, mais de uma vez e por mais de um canal.</p>
+            </div><!--blog-summary-->
+            <div class="blog-tags">
+                <ul>
+                    <li><a href="#">Link do post</a></li>
+                </ul>
+            </div><!--blog-tags-->
+        </div><!--blog-body-->
+
+        <div class="blog-footer">
+            <ul>
+                <li class="published-date"><small><strong>09:14</strong> - </small>20-07-2023</li>
+            </ul>
+        </div><!--blog-footer-->
+        
+    </div><!--blog-container-->
+
+    <div class="blog-container">
+
+        <div class="blog-header">
+            <div class="blog-cover">
+                <!--
+               <img src="./assets/blog/nutrição-parada-sistema.png">
+            -->
+            </div><!--blog-cover-->
+        </div><!--blog-header-->
+
+        <div class="blog-body">
+            <div class="blog-title">
+                <h1>Atualização de Servidores</h1>
+            </div><!--blog-title-->
+            <div class="blog-summary">
+                <p>Os sistemas da <strong>Balança da Lavanderia e Identificação do Paciente da Nutrição</strong> passarão por uma manutenção de otimização e correção de problemas, 
+                    o serviço será acompanhado pela coordenação da NTI e deverá ter duração aproximada de 1h (uma hora), no entanto, 
+                    poderá se extender por um tempo maior em caso de intercorrências.<br><br>Deverão ser adotadas as <strong>medidas de 
+                    contingência do setor</strong> de forma a dar continuidade aos serviços impactados por essa aplicação.<br><br>Todos 
+                    os setores impactados foram devidamente e antecipadamente comunicados, mais de uma vez e por mais de um canal.</p>
+            </div><!--blog-summary-->
+            <div class="blog-tags">
+                <ul>
+                    <li><a href="#">Link do post</a></li>
+                </ul>
+            </div><!--blog-tags-->
+        </div><!--blog-body-->
+
+        <div class="blog-footer">
+            <ul>
+                <li class="published-date"><small><strong>09:14</strong> - </small>20-07-2023</li>
+            </ul>
+        </div><!--blog-footer-->
+        
+    </div><!--blog-container-->
+
+    <div class="blog-container">
+
+        <div class="blog-header">
+            <div class="blog-cover">
+                <!--
+               <img src="./assets/blog/nutrição-parada-sistema.png">
+            -->
+            </div><!--blog-cover-->
+        </div><!--blog-header-->
+
+        <div class="blog-body">
+            <div class="blog-title">
+                <h1>Atualização de Servidores</h1>
+            </div><!--blog-title-->
+            <div class="blog-summary">
+                <p>Os sistemas da <strong>Balança da Lavanderia e Identificação do Paciente da Nutrição</strong> passarão por uma manutenção de otimização e correção de problemas, 
+                    o serviço será acompanhado pela coordenação da NTI e deverá ter duração aproximada de 1h (uma hora), no entanto, 
+                    poderá se extender por um tempo maior em caso de intercorrências.<br><br>Deverão ser adotadas as <strong>medidas de 
+                    contingência do setor</strong> de forma a dar continuidade aos serviços impactados por essa aplicação.<br><br>Todos 
+                    os setores impactados foram devidamente e antecipadamente comunicados, mais de uma vez e por mais de um canal.</p>
+            </div><!--blog-summary-->
+            <div class="blog-tags">
+                <ul>
+                    <li><a href="#">Link do post</a></li>
+                </ul>
+            </div><!--blog-tags-->
+        </div><!--blog-body-->
+
+        <div class="blog-footer">
+            <ul>
+                <li class="published-date"><small><strong>09:14</strong> - </small>20-07-2023</li>
+            </ul>
+        </div><!--blog-footer-->
+        
+    </div><!--blog-container-->
+
+
+    <script src="./js/script.js"></script>
+    <script src="./js/clima.js"></script>
+
+</body>
+</html>

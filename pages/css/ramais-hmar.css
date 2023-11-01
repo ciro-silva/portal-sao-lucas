@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	border: border-box;
+	font-family: 'Poppins', sans-serif;
+    
+}
+
+:root {
+    --background: #F9F9F9;
+    --title: #231F20;
+    --subtitle: #6F6F6F;
+    --bluedark: #231F20;
+    --bluelight: #87B64A;;
+    --poppins: 'Poppins', sans-serif;
+}
+html, body {
+    background: var(--background);
+}
+
+/* TOP-----------------------------------------------------------------------------------------------*/
+.container-top {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(180deg, #E9FFEB 0%, #F5F9F8 100%);
+}
+
+.container-top-items {
+    width: 92%;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.8rem;
+}
+
+/* TOP LEFT--------------------------------------------------------*/
+.container-top-items-left {
+    display: flex;
+    align-items: center;
+}
+
+/* TOP LEFT - LOGO*/
+.logo-portal {
+    padding-right: 1rem;
+}
+
+.logo-portal img {
+    width: 140px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+/* TOP RIGHT--------------------------------------------------------*/
+.container-top-items-right {
+    display: flex;
+    align-items: center;
+}
+
+/* TOP - LOGOS*/
+.logos {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+
+.container-logos {
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+ 
+.container-logos  img{
+    width: 100px;
+
+}
+
+
+
+/* TOP - CARD INFO*/
+.card-info-items {
+    width: 200px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(180deg, #ACCA85 0%, #87B64A 100%);
+    border-radius: 6px;
+}
+
+.timer {
+    display: flex;
+    
+}
+
+.timer h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff; 
+}
+
+#temp{
+    color: #fff;
+    font-weight: normal;
+}
+
+.city {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #fff;
+    line-height: 0.8rem;
+}
+
+.clima {
+    display: flex;
+    flex-direction: column;
+}
+
+.clima h2 {
+    font-size: 0.7rem;
+    color: #fff;
+	display: flex;
+    line-height: 0.5rem;
+}
+
+#umidad {
+    display: none;
+}
+/*-----------------------------------------------------------------------------------------------*/
+
+/* PAINEL TOP*/
+.container-painel-top {
+    width: 92%;
+    height: 205px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 0.8rem;
+    margin-top: -80px;
+    
+}
+
+.painel-Card {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    background: white;
+    
+}
+
+.painel-itens-left {
+    width: 40%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.painel-itens-right {
+    width: 60%;
+    height: 200px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    
+}
+
+  
+.painel-Title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--title);
+    z-index: 2;
+    padding: 40px 0px 0px 50px;
+}
+  
+.painelDesc {
+    font-size: 0.8rem;
+    color: var(--subtitle);
+    z-index: 2;
+    padding: 0px 50px 0px 50px;
+}
+  
+.painelDesc a {
+    color: var(--title);
+}
+
+/*SEARCH-BOX -------------------------------------------------------------*/
+
+.container-search-box {
+    margin-top: 30px;
+    width: 100%;
+    height: 60px;   
+
+}
+
+.container-search-box-certer {
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box{
+    position: relative;
+    height: 40px;
+    max-width: 550px;
+    width: 100%;
+
+}
+
+.search-box input{
+    height: 100%;
+    width: 300px;
+    outline: none;
+    background: #ffffff;
+    border: 2px solid #EFEEF1;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 0 15px;
+}
+  
+.search-box .bx-search{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: var(--bluelight);
+    right: 222px;
+    top: 55%;
+    transform: translateY(-50%);
+    border-radius: 4px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.search-box .bx-search:hover {
+    background: var(--bluedark);
+}
+
+.search-box input::placeholder {
+    color: #a8a8a8;
+}
+
+/* TABLE - RAMAIS --------------------------------------------------------*/
+
+.container-table-ramais {
+    width: 100%;
+    
+}
+
+.table-ramais {
+    width: 92%;
+    margin: 0 auto;
+    
+}
+
+table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    font-size: 0.8rem;
+
+}
+
+table * {
+    position: relative;
+    color: var(--title);
+
+}
+
+table td,
+table th {
+    padding-left: 8px;
+}
+
+
+table thead {
+    background: var(--background);
+    
+}
+
+table thead tr {
+    height: 60px;
+    background: var(--background);
+    font-size: 16px;
+    
+}
+
+table tr {
+    transition: all 1s ease;
+
+}
+
+table tr:hover {
+    background: rgb(243, 243, 243);
+    cursor: pointer;
+}
+
+.ramais-contato-info {
+    display: flex;
+    align-items: center;
+}
+
+.ramais-img-contato img {
+    width: 40px;
+    height: 40px;
+    background: var(--background);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.ramais-desc-setor {
+    display: flex;
+    flex-direction: column;
+}
+
+.ramais-desc-setor p {
+    line-height: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.ramais-desc-setor small {
+    color: var(--subtitle);
+}
+
+table tbody tr {
+    height: 48px;
+    border-bottom: 1px solid #E3F1D5;
+}
+
+table tbody tr:last-child {
+    border: 0;
+}
+
+table td,
+table th {
+    text-align: left;
+}
+
+table td.l,
+table th.l {
+    text-align: right;
+}
+
+table td.c,
+table th.c {
+    text-align: center;
+}
+
+table td.r,
+table th.r {
+    text-align: center;
+}
+
+.btn-actions-ramais {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.btn-icon-editar-ramal  {
+    width: 50%;
+    transition: all 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.btn-icon-excluir-ramal  {
+    width: 50%;
+    transition: all 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.btn-icon-editar-ramal i {
+    color: var(--subtitle);
+    transition: all 0.25s ease;
+
+}
+
+.btn-icon-excluir-ramal i {
+    color: var(--subtitle);
+    transition: all 0.25s ease;
+
+}
+
+.btn-icon-editar-ramal i:hover {
+    color: var(--title);
+    transform: translateY(-1px);
+    
+}
+
+.btn-icon-excluir-ramal i:hover {
+    color: var(--title);
+    transform: translateY(-1px);
+    
+}
+
+/* TABLE - RESPONSIVIDADE --------------------------------------------------------*/
+@media screen and (max-width: 35.5em) {
+    table {
+        display: block;
+    }
+
+    table>*,
+    table tr,
+    table td,
+    table th {
+        display: block;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tbody tr {
+        height: auto;
+        padding: 8px 0;
+    }
+
+    table tbody tr td {
+        padding-left: 45%;
+        margin-bottom: 12px;
+    }
+
+    table tbody tr td:last-child {
+        margin-bottom: 0;
+    }
+
+    table tbody tr td:before {
+        position: absolute;
+        font-weight: 700;
+        width: 40%;
+        left: 10px;
+        top: 0;
+    }
+
+    table tbody tr td:nth-child(1):before {
+        content: "Contato";
+    }
+
+    table tbody tr td:nth-child(2):before {
+        content: "Setor";
+    }
+
+    table tbody tr td:nth-child(3):before {
+        content: "Ramais 1";
+    }
+
+    table tbody tr td:nth-child(4):before {
+        content: "Ramais 2";
+    }
+
+    table tbody tr td:nth-child(5):before {
+        content: "Ramais 3";
+    }
+
+    table tbody tr td:nth-child(5):before {
+        content: "Ações";
+    }
+}
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/*MODAL ADD CONTATO -----------*/
+
+
+/*Dialog Styles*/
+dialog {
+    width: 100%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /*centraliza o modal na tela*/
+    padding: 1rem 3rem;
+    background: white;
+    max-width: 400px;
+    padding-top: 2rem;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+    -webkit-animation: fadeIn 1s ease both;
+    animation: fadeIn 1s ease both;
+}
+
+
+dialog::-webkit-backdrop { /*background do MODAL*/
+    -webkit-animation: fadeIn 1s ease both;
+    animation: fadeIn 1s ease both;
+    background: rgba(255, 255, 255, 0.4);
+    z-index: 2;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+
+dialog::backdrop {
+    -webkit-animation: fadeIn 1s ease both;
+    animation: fadeIn 1s ease both;
+    background: rgba(255, 255, 255, 0.4);
+    z-index: 2;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
+
+dialog .x {
+    filter: grayscale(1);
+    border: none;
+    background: none;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    transition: ease filter, transform 0.3s;
+    cursor: pointer;
+    transform-origin: center;
+}
+
+dialog .x:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+dialog h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+dialog p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    padding: 0.5rem 0;
+}
+
+dialog p a:visited {
+    color: rgb(var(--vs-primary));
+}
+
+button.primary {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #fff !important;
+    background: var(--bluelight);
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background-color 0.1s ease;
+    box-sizing: border-box;
+    transition: all 0.25s ease;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -10px rgb(var(--vs-primary)/50%);
+    font-weight: 600;
+}
+
+button.primary:hover {
+    box-shadow: 0 20px 20px -10px (var(--bluedark)/50%);
+    transform: translateY(-1px);
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* MODAL ADD CONTATO - FORMULÁRIO ====================>*/
+/*--------------------------------------------------------------------------------------------------*/
+
+.title-form-add-contato {
+    padding-bottom: 1rem;
+}
+
+.nice-form-group {
+  --nf-input-size:1rem;
+  --nf-input-font-size:calc(var(--nf-input-size)*0.875);
+  --nf-small-font-size:calc(var(--nf-input-size)*0.875);
+  --nf-input-font-family:inherit;
+  --nf-label-font-family:inherit;
+  --nf-input-color:#20242f;
+  --nf-input-border-radius:0.25rem;
+  --nf-input-placeholder-color:#f0f0f0;
+  --nf-input-border-color:#c0c4c9;
+  --nf-input-border-width:1px;
+  --nf-input-border-style:solid;
+  --nf-input-border-bottom-width:2px;
+  --nf-input-focus-border-color:#3b4ce2;
+  --nf-input-background-color:#f9fafb;
+  --nf-invalid-input-border-color:var(--nf-input-border-color);
+  --nf-invalid-input-background-color:var(--nf-input-background-color);
+  --nf-invalid-input-color:var(--nf-input-color);
+  --nf-valid-input-border-color:var(--nf-input-border-color);
+  --nf-valid-input-background-color:var(--nf-input-background-color);
+
+}
+
+.nice-form-group > label {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: calc(var(--nf-input-size)/2);
+  
+  
+}
+
+.nice-form-group input {
+    margin-bottom: 0.6rem;
+
+}
+
+.nice-form-group > input[type=checkbox], .nice-form-group > input[type=date], .nice-form-group > input[type=email], .nice-form-group > input[type=month], .nice-form-group > input[type=number], .nice-form-group > input[type=password], .nice-form-group > input[type=radio], .nice-form-group > input[type=search], .nice-form-group > input[type=tel], .nice-form-group > input[type=text], .nice-form-group > input[type=time], .nice-form-group > input[type=url], .nice-form-group > input[type=week], .nice-form-group > select, .nice-form-group > textarea {
+  font-family: inherit;
+  font-size: var(--nf-input-font-size);
+  border-bottom-width: var(--nf-input-border-width);
+  font-family: var(--nf-input-font-family);
+  box-shadow: none;
+  border-radius: var(--nf-input-border-radius);
+  border: var(--nf-input-border-width) var(--nf-input-border-style) var(--nf-input-border-color);
+  border-bottom: var(--nf-input-border-bottom-width) var(--nf-input-border-style) var(--nf-input-border-color);
+  color: var(--nf-input-color);
+  width: 100%;
+  padding: calc(var(--nf-input-size)*0.75);
+  height: calc(var(--nf-input-size)*2.75);
+  line-height: normal;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: all 0.15s ease-out;
+
+}
+
+.nice-form-group > input[type=checkbox]:required:not(:placeholder-shown):invalid, .nice-form-group > input[type=date]:required:not(:placeholder-shown):invalid, .nice-form-group > input[type=email]:required:not(:placeholder-shown):invalid, .nice-form-group > input[type=month]:required:not(:placeholder-shown):invalid, .nice-form-group > input[type=number]:required:not(:placeholder-shown):invalid, .nice-form-group > input[type=password]:required:not(:placeholder-shown):invalid, .nice-form-group > input[type=radio]:required:not(:placeholder-shown):invalid, .nice-form-group > input[type=search]:required:not(:placeholder-shown):invalid, .nice-form-group > input[type=tel]:required:not(:placeholder-shown):invalid, .nice-form-group > input[type=text]:required:not(:placeholder-shown):invalid, .nice-form-group > input[type=time]:required:not(:placeholder-shown):invalid, .nice-form-group > input[type=url]:required:not(:placeholder-shown):invalid, .nice-form-group > input[type=week]:required:not(:placeholder-shown):invalid, .nice-form-group > select:required:not(:placeholder-shown):invalid, .nice-form-group > textarea:required:not(:placeholder-shown):invalid {
+  background-color: var(--nf-invalid-input-background-color);
+  border-bottom-color: var(--nf-valid-input-border-color);
+  border-color: var(--nf-valid-input-border-color) var(--nf-valid-input-border-color) var(--nf-invalid-input-border-bottom-color);
+  color: var(--nf-invalid-input-color);
+}
+
+.nice-form-group > input[type=checkbox]:focus, .nice-form-group > input[type=date]:focus, .nice-form-group > input[type=email]:focus, .nice-form-group > input[type=month]:focus, .nice-form-group > input[type=number]:focus, .nice-form-group > input[type=password]:focus, .nice-form-group > input[type=radio]:focus, .nice-form-group > input[type=search]:focus, .nice-form-group > input[type=tel]:focus, .nice-form-group > input[type=text]:focus, .nice-form-group > input[type=time]:focus, .nice-form-group > input[type=url]:focus, .nice-form-group > input[type=week]:focus, .nice-form-group > select:focus, .nice-form-group > textarea:focus {
+  outline: none;
+  border-color: var(--bluelight);
+}
+
+.nice-form-group > input[type=number] {
+  width: auto;
+}
+
+*, :after, :before {
+  box-sizing: inherit;
+}
+
+.nice-form-group {
+    
+    font-family: Roboto, sans-serif;
+    color: #4b5563;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.btns-form-add-ramal {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: end;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width:800px) {
+    .painel-img {
+        justify-content: center;
+        align-items: center;
+    }
+    .painel-itens-left {
+     display: none;   
+    }
+    .container-top-items-right {
+        display: none;
+    }
+}
+
+
+
+

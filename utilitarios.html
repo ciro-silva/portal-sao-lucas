@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"> 
+
+	<head>
+		<meta charset="UTF-8"/> 
+		<title>Portal São Lucas - Utilitários</title> 
+		<link href="./css/style.css" rel="stylesheet"/> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<script src="https://kit.fontawesome.com/4cb80f45e5.js" crossorigin="anonymous"></script> 
+		<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="shortcut icon" href="./assets/icons/inicio/sao-lucas-icon.png"> 
+	</head>
+	
+<body>
+    
+<!--TOP-------------------------------------------------------------------------->
+
+<div class="container-top">
+
+    <div class="container-top-items">
+
+        <div class="container-top-items-left">
+            <!--LOGO PORTAL SÃO LUCAS ================-->
+            <div class="logo-portal">
+                <a href="./index.html">
+                <img src="./assets/logo-portal-sao-lucas.png" alt="logo do portal" class="logo">
+                </a>
+            </div><!--logo-portal-->
+
+            <!--BARRA DE PESQUISA ================-->
+            <div class="search-box">
+                <input type="text" placeholder="Pesquisar...">
+                <i class='bx bx-search' ></i>
+            </div>
+        </div><!--container-top-items-left-->    
+
+        <div class="container-top-items-right">
+            <!--LOGOS SÃO LUCAS E REDE DOR ================-->
+            <div class="logos">
+
+                <div class="container-logos">
+
+                    <a id="logo-sao-lucas" href="https://www.rededorsaoluiz.com.br/hospital/sao-lucas" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/logo-sao-lucas.png" alt="logo do portal">
+                    </a>
+                    <a href="https://www.rededorsaoluiz.com.br/" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/logo-rede-dor .png" alt="logo do portal">
+                    </a>
+                </div>
+                
+            </div><!--logos-->
+
+            <!--CARD INFO ================-->
+            <div class="card-info">
+                <div class="card-info-items">
+
+                    <div class="timer">
+                        <h1 id="horas">22</h1>
+                        <h1 id="pontos">:</h1>
+                        <h1 id="minutos">22</h1>
+                    </div><!--timer-->
+
+                    <div class="clima" id="temperatura">
+                        <h1 class="city"></h1>
+                        <h2><span id="temp"></span>°C<span id='umidad'> um</span></h2>
+                    </div><!--clima-->
+
+                </div>
+            </div><!--card-info-->  
+
+        </div><!--container-top-items-right-->
+        
+    </div><!--container-top-items-->
+
+</div><!--container-top-->
+
+<!--PAINEL-TOP------------------------------------------------------------------------------------>
+    <!--PAINEL TOP ================-->
+    <div class="container-painel-top">
+
+        <div class="painel-Card">
+
+            <div class="painel-itens-left">
+                <p class="painel-Title">Olá, tudo bem?</p>
+                <p class="painelDesc">Aqui temos alguns links, arquivos e outros itens que podem lhe ser útil.</p>
+            </div><!--painel=itens-left-->
+
+            <div class="painel-itens-right">
+                <div class="painel-img">
+                    <img src="./assets/paintel-top-img-utilitarios.png" alt="logo do portal" target="_blank" rel="noopener noreferrer">
+                </div><!--painel-img-->
+            </div><!--painel=itens-right-->
+
+          </div><!--painel-Card-->
+          
+    </div><!--container-painel-top-->
+
+<!--TABS ------------------------------------------------------------------------------------------->
+
+    <!--TABS ===================================-->
+    <div class="container-tabs">
+
+        <div class="container">
+            <div class="tabs">
+
+                <input type="radio" id="radio-1" name="tabs" onclick="tabNavgationInicio()"/>
+                <label class="tab" for="radio-1">Início</label>
+
+                <input type="radio" id="radio-2" name="tabs" checked/>
+                <label class="tab" for="radio-2">Utilitários</label>
+
+                <input type="radio" id="radio-3" name="tabs" onclick="tabNavgationBlog()"/>
+                <label class="tab" for="radio-3">Blog</label >
+
+                <span class="glider"></span>
+
+            </div><!--tabs-->
+        </div><!--container-->
+
+    </div><!--container-tabs-->
+
+<!--CARDS LINK ------------------------------------------------------------------------------------>
+    <!--LINKS - CABECALHO =======================-->
+
+        <div class="container-links">
+
+            <div class="container-links-cabecalho">
+
+                <p class="title">Utilidades</p>
+                <p class="message">Listagem de ferramentas que podem agilizar os seus processos no trabalho.</p>
+
+            </div><!--container-links-cabecalho-->
+
+        </div><!--container-links-->
+
+        <!--LINKS - CARDS =======================-->
+    
+        <div class="container-geral-cards">
+            <div class="container-cards">
+
+                <!--LINK - RAMAIS =======================-->
+                <div class="container-card-link">
+                        <a href="./pages/hmar-ramais.html" target="_blank" rel="noopener noreferrer">
+                            <div class="card-link-img">
+                                <div class="card-link-img-icon">
+                                    <img src="./assets/icons/inicio/ramais-icon.png" alt="logo do Tasy Philips">
+                                </div><!--card-link-img-icon-->
+                            </div><!--card-link-img-->
+
+                            <div class="card-desc">
+                                <div class="card-title-link">
+                                    <p>Ramais</p>
+                                </div><!--card-title-->
+    
+                                <div class="card-desc-link">
+                                    <p>Listagem fornecida pelo <strong>PABX</strong></p>
+                                </div><!--card-title-->
+                            </div><!--card-desc-->
+                        </a>
+                </div><!--container-card-link-->
+
+
+
+
+
+                <!--LINK - RESULTADO DE EXAMES =======================-->
+                <div class="container-card-link">
+                    <a href="https://www.rededorsaoluiz.com.br/paciente" target="_blank" rel="noopener noreferrer">
+                        <div class="card-link-img">
+                            <div class="card-link-img-icon">
+                                <img src="./pages/assets/icons/resultado-exames-icon.png" alt="--">
+                            </div><!--card-link-img-icon-->
+                        </div><!--card-link-img-->
+
+                        <div class="card-desc">
+                            <div class="card-title-link">
+                                <p>Resultado de Exames</p>
+                            </div><!--card-title-->
+
+                            <div class="card-desc-link">
+                                <p>Resultado de exames <strong>Laboratoriais</strong></p>
+                            </div><!--card-title-->
+                                </div><!--card-desc-->
+                            </a>
+                </div><!--container-card-link-->
+
+
+                <!--LINK - FICHA DE NOTIFICAÇÃO =======================-->
+                <div class="container-card-link">
+                    <a href="./pages/notificacao.html" target="_blank" rel="noopener noreferrer">
+                        <div class="card-link-img">
+                            <div class="card-link-img-icon">
+                                <img src="./pages/assets/icons/ficha-notificacao-icon.png" alt="--">
+                            </div><!--card-link-img-icon-->
+                        </div><!--card-link-img-->
+
+                        <div class="card-desc">
+                            <div class="card-title-link">
+                                <p>Ficha de Notificação</p>
+                            </div><!--card-title-->
+
+                            <div class="card-desc-link">
+                                <p>Baixe a ficha de notificação ou acesse via <strong>QR-Code</strong></p>
+                            </div><!--card-title-->
+                        </div><!--card-desc-->
+                    </a>
+                </div><!--container-card-link-->
+
+                    <!--LINK - CONVENIOS =======================-->
+                    <div class="container-card-link invisible">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <div class="card-link-img">
+                                <div class="card-link-img-icon">
+                                    <img src="./assets/icons/inicio/convenios-icon.png" alt="Logo convenios">
+                                </div><!--card-link-img-icon-->
+                            </div><!--card-link-img-->
+
+                            <div class="card-desc">
+                                <div class="card-title-link">
+                                    <p>---</p>
+                                </div><!--card-title-->
+
+                                <div class="card-desc-link">
+                                    <p>---<strong>---</strong></p>
+                                </div><!--card-title-->
+                            </div><!--card-desc-->
+                        </a>
+                    </div><!--container-card-link-->
+
+
+                <!--LINK - NEOVERO =======================-->
+                <div class="container-card-link invisible">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <div class="card-link-img">
+                            <div class="card-link-img-icon">
+                                <img src="/" alt="ícone">
+                            </div><!--card-link-img-icon-->
+                        </div><!--card-link-img-->
+
+                        <div class="card-desc">
+                            <div class="card-title-link">
+                                <p>----</p>
+                            </div><!--card-title-->
+
+                            <div class="card-desc-link">
+                                <p>----<strong>-----</strong>-----</p>
+                            </div><!--card-title-->
+                        </div><!--card-desc-->
+                    </a>
+                </div><!--container-card-link-->
+
+
+                <!--LINK - WEBMAIL =======================-->
+                <div class="container-card-link invisible">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <div class="card-link-img">
+                            <div class="card-link-img-icon">
+                                <img src="./assets/icons/inicio/" alt="--">
+                            </div><!--card-link-img-icon-->
+                        </div><!--card-link-img-->
+
+                        <div class="card-desc">
+                            <div class="card-title-link">
+                                <p>----------</p>
+                            </div><!--card-title-->
+
+                            <div class="card-desc-link">
+                                <p>----------<strong>----------</strong></p>
+                            </div><!--card-title-->
+                        </div><!--card-desc-->
+                    </a>
+                </div><!--container-card-link-->
+
+
+                <!--LINK - OUTLOOK =======================-->
+                <div class="container-card-link invisible">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <div class="card-link-img">
+                            <div class="card-link-img-icon">
+                                <img src="./assets/icons/inicio/" alt="--">
+                            </div><!--card-link-img-icon-->
+                        </div><!--card-link-img-->
+
+                        <div class="card-desc">
+                            <div class="card-title-link">
+                                <p>----------</p>
+                            </div><!--card-title-->
+
+                            <div class="card-desc-link">
+                                <p>----------<strong>----------</strong></p>
+                            </div><!--card-title-->
+                        </div><!--card-desc-->
+                    </a>
+                </div><!--container-card-link-->
+
+
+                <!--LINK - TASY - HOMOLOGAÇÃO =======================-->
+                <div class="container-card-link invisible">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <div class="card-link-img">
+                            <div class="card-link-img-icon">
+                                <img src="./assets/icons/inicio/" alt="--">
+                            </div><!--card-link-img-icon-->
+                        </div><!--card-link-img-->
+
+                        <div class="card-desc">
+                            <div class="card-title-link">
+                                <p>----------</p>
+                            </div><!--card-title-->
+
+                            <div class="card-desc-link">
+                                <p>----------<strong>----------</strong></p>
+                            </div><!--card-title-->
+                        </div><!--card-desc-->
+                    </a>
+                </div><!--container-card-link-->
+
+
+            <!--LINK - TROCA SENHA =======================-->
+            <div class="container-card-link invisible">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="card-link-img">
+                        <div class="card-link-img-icon">
+                            <img src="./assets/icons/inicio/" alt="--">
+                        </div><!--card-link-img-icon-->
+                    </div><!--card-link-img-->
+
+                    <div class="card-desc">
+                        <div class="card-title-link">
+                            <p>----------</p>
+                        </div><!--card-title-->
+
+                        <div class="card-desc-link">
+                            <p>----------<strong>----------</strong></p>
+                        </div><!--card-title-->
+                    </div><!--card-desc-->
+                </a>
+            </div><!--container-card-link-->
+
+            <!--LINK -  =======================-->
+            <div class="container-card-link invisible">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="card-link-img">
+                        <div class="card-link-img-icon">
+                            <img src="./assets/icons/inicio/" alt="">
+                        </div><!--card-link-img-icon-->
+                    </div><!--card-link-img-->
+
+                    <div class="card-desc">
+                        <div class="card-title-link">
+                            <p>Portal NTI</p>
+                        </div><!--card-title-->
+
+                        <div class="card-desc-link">
+                            <p>Serviços de <strong>-----</strong></p>
+                        </div><!--card-title-->
+                    </div><!--card-desc-->
+                </a>
+            </div><!--container-card-link-->
+
+<!---------- DOWNLOADS ----------------------------------------------------------------------------------------->
+                      
+            <div class="footer-divider">
+            </div><!--footer-divider-->
+
+            <div class="container-links">
+
+                <div class="container-links-cabecalho-oncologia">
+
+                    <p class="title">Downloads</p>
+                    
+                </div><!--container-links-cabecalho-->
+
+            </div><!--container-links-->
+
+            
+            <!--LINK - TASY JAVA =======================-->
+            <div class="container-card-link">
+                <a href="http://10.0.0.200/Tasy/" target="_blank" rel="noopener noreferrer">
+                    <div class="card-link-img">
+                        <div class="card-link-img-icon">
+                            <img src="./assets/icons/inicio/tasy-java-icon.png" alt="logo do sistema">
+                        </div><!--card-link-img-icon-->
+                    </div><!--card-link-img-->
+
+                    <div class="card-desc">
+                        <div class="card-title-link">
+                            <p>Tasy - JAVA</p>
+                        </div><!--card-title-->
+
+                        <div class="card-desc-link">
+                            <p><strong>Baixe o </strong>Prontuário Eletrônico na versão <strong>JAVA</strong></p>
+                        </div><!--card-title-->
+                    </div><!--card-desc-->
+                </a>
+            </div><!--container-card-link-->
+
+
+            <!--LINK -  =======================-->
+            <div class="container-card-link invisible">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="card-link-img">
+                        <div class="card-link-img-icon">
+                            <img src="" alt="--">
+                        </div><!--card-link-img-icon-->
+                    </div><!--card-link-img-->
+
+                    <div class="card-desc">
+                        <div class="card-title-link">
+                            <p>----</p>
+                        </div><!--card-title-->
+
+                        <div class="card-desc-link">
+                            <p>---------- <strong>------</strong></p>
+                        </div><!--card-title-->
+                    </div><!--card-desc-->
+                </a>
+            </div><!--container-card-link-->
+
+
+            <!--LINK -  =======================-->
+            <div class="container-card-link invisible">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="card-link-img">
+                        <div class="card-link-img-icon">
+                            <img src="./pages/assets/icons/" alt="---">
+                        </div><!--card-link-img-icon-->
+                    </div><!--card-link-img-->
+
+                    <div class="card-desc">
+                        <div class="card-title-link">
+                            <p>--------</p>
+                        </div><!--card-title-->
+
+                        <div class="card-desc-link">
+                            <p>----------<strong>----------</strong></p>
+                        </div><!--card-title-->
+                    </div><!--card-desc-->
+                </a>
+            </div><!--container-card-link-->
+            
+
+            <!--LINK -  =======================-->
+            <div class="container-card-link invisible">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="card-link-img">
+                        <div class="card-link-img-icon">
+                            <img src="./assets/icons/inicio/" alt="--">
+                        </div><!--card-link-img-icon-->
+                    </div><!--card-link-img-->
+
+                    <div class="card-desc">
+                        <div class="card-title-link">
+                            <p>---</p>
+                        </div><!--card-title-->
+
+                        <div class="card-desc-link">
+                            <p>---------- <strong>----------</strong></p>
+                        </div><!--card-title-->
+                    </div><!--card-desc-->
+                </a>
+            </div><!--container-card-link-->
+
+            <!--LINK -  =======================-->
+            <div class="container-card-link invisible">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="card-link-img">
+                        <div class="card-link-img-icon">
+                            <img src="./assets/icons/inicio/" alt="--">
+                        </div><!--card-link-img-icon-->
+                    </div><!--card-link-img-->
+
+                    <div class="card-desc">
+                        <div class="card-title-link">
+                            <p>----</p>
+                        </div><!--card-title-->
+
+                        <div class="card-desc-link">
+                            <p>------ <strong>-----</strong></p>
+                        </div><!--card-title-->
+                    </div><!--card-desc-->
+                </a>
+            </div><!--container-card-link-->
+
+                </div><!--container-card-link-->
+
+            </div><!--card-links-items-->
+        </div><!--container-card-links-->
+
+        
+
+<!----------FOOTER----------------------------------------------------------------------------------------->
+
+        <footer>
+            <div class="container-footer">
+                <div class="footer-items">
+
+                    <div class="footer-divider">
+                    </div><!--footer-divider-->
+                    <div class="footer-ass">
+                        <p>Desenvolvido pelo<br> <strong>Núcleo de Tecnologia da Informação</strong><br> do Hospital Memorial Arthur Ramos</p>
+                    </div><!--footer-ass-->
+
+                </div><!--footer-items-->
+            </div><!--container-footer-->
+        </footer>
+        
+    <script src="./js/script.js"></script>
+    <script src="./js/clima.js"></script>
+
+</body>
+</html>

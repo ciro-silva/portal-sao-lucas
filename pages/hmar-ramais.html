@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"> 
+
+	<head>
+		<meta charset="UTF-8"/> 
+		<title>Ramais - São Lucas</title> 
+		<link href="../pages/css/ramais-hmar.css" rel="stylesheet"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<script src="https://kit.fontawesome.com/4cb80f45e5.js" crossorigin="anonymous"></script> 
+		<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/pen.css' rel='stylesheet'>
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/options.css' rel='stylesheet'>
+        <link href='https://unpkg.com/css.gg@2.0.0/icons/css/trash.css' rel='stylesheet'>
+        <link rel="shortcut icon" href="../assets/icons/inicio/sao-lucas-icon.png"> 
+	</head>
+	
+<body>
+
+<!--TOP-------------------------------------------------------------------------->
+
+    <div class="container-top">
+
+        <div class="container-top-items">
+
+            <div class="container-top-items-left">
+
+                <!--LOGO PORTAL HMAR ===========================-->
+                <div class="logo-portal">
+                    <a href="../index.html">
+                    <img src="../assets/logo-portal-sao-lucas.png" alt="logo do portal" class="logo">
+                    </a>
+                </div><!--logo-portal-->
+    
+                
+            </div><!--container-top-items-left-->    
+
+            <div class="container-top-items-right">
+
+                <!--LOGOS ARTHURRAMOS E REDE DOR ================-->
+                <div class="logos">
+
+                    <div class="container-logos">
+                        <a href="https://www.arthurramos.com.br/" target="_blank" rel="noopener noreferrer">
+                            <img id="logo-sao-lucas" src="../assets/logo-sao-lucas.png" alt="logo do portal">
+                        </a>
+                        <a href="https://www.rededorsaoluiz.com.br/" target="_blank" rel="noopener noreferrer">
+                            <img src="../assets/logo-rede-dor .png" alt="logo do portal">
+                        </a>
+                    </div><!--container-logos-->
+                    
+                </div><!--logos-->
+    
+                <!--CARD INFO ===================================-->
+                <div class="card-info">
+                    <div class="card-info-items">
+
+                        <div class="timer">
+                            <h1 id="horas">22</h1>
+                            <h1 id="pontos">:</h1>
+                            <h1 id="minutos">22</h1>
+                        </div><!--timer-->
+
+                        <div class="clima" id="temperatura">
+                            <h1 class="city"></h1>
+                            <h2><span id="temp"></span>°C<span id='umidad'> um</span></h2>
+                        </div><!--clima-->
+
+                    </div><!--card-info-items-->
+                </div><!--card-info-->  
+
+            </div><!--container-top-items-right-->
+            
+        </div><!--container-top-items-->
+
+    </div><!--container-top-->
+
+<!----------------------------------------------------------------------------------------------->
+
+    <!--PAINEL-TOP--------------------------------------------------------------->
+
+    <!--PAINEL TOP ============================================-->
+    <div class="container-painel-top">
+
+        <div class="painel-Card">
+
+            <!--PAINEL - TITLE - LEFT =========================-->
+            <div class="painel-itens-left">
+                <p class="painel-Title">Ramais</p>
+                <p class="painelDesc">Para realizar alteração de um ramal, entre em contato com o setor <strong>PABX (Disk 9) </strong>e informe sobre a alteração desejada.</p>
+            </div><!--painel=itens-left-->
+
+            <!--PAINEL - BANNER - RIGHT =======================-->
+            <div class="painel-itens-right">
+                <div class="painel-img">
+                    <img src="../pages/assets/img/ramais-banner-top.png" alt="Banner Ramais" target="_blank" rel="noopener noreferrer">
+                </div><!--painel-img-->
+            </div><!--painel=itens-right-->
+
+        </div><!--painel-Card-->
+          
+    </div><!--container-painel-top-->
+
+<!----------------------------------------------------------------------------------------------->
+
+    <!--SEARCH BOX ---------------------------------------------------------------->
+
+    <!--BARRA DE PESQUISA ===================================-->
+    <div class="container-search-box">
+        <div class="container-search-box-certer">
+
+            <div class="search-box">
+                <input type="text" placeholder="Pesquisar...">
+                <i class='bx bx-search' ></i>
+            </div><!--search-box-->
+            
+            <!--BTN ADICIONAR RAMAL =========================-->
+            <button class="primary" onclick="window.dialog.showModal();">Adicionar</button>
+
+                <dialog id="dialog">
+
+
+                    <!--FORMULÁRIO ADD CONTATO ==============-->
+                    <section class="add-contato-form">
+                        
+                        <div class="title-form-add-contato">
+                            <h1>Novo Contato</h1>
+                        </div><!--title-form-add-contato-->
+
+                        <div class="nice-form-group">
+                          <label>Nome do Contato</label>
+                          <input type="text" placeholder="Nome do Contato" value="" />
+                        </div>
+
+                        <div class="nice-form-group">
+                            <label>Setor</label>
+                            <input type="text" placeholder="Setor" value="" />
+                          </div>
+
+                        <div class="nice-form-group">
+                            <label>Localização</label>
+                            <input type="text" placeholder="Ex: Recepção" value="" />
+                          </div>
+                  
+                        <div class="nice-form-group">
+                          <label>Ramal 1</label>
+                          <input type="tel" placeholder="0000" value="" />
+                        </div>
+
+                        <div class="nice-form-group">
+                            <label>Ramal 2</label>
+                            <input type="tel" placeholder="0000" value="" />
+                        </div>
+
+                        <div class="nice-form-group">
+                            <label>Ramal 3</label>
+                            <input type="tel" placeholder="0000" value="" />
+                        </div>
+
+                        <div class="btns-form-add-ramal">
+                        <!--<button class="btn-cancelar">Cancelar</button>-->
+		                <button class="primary">Salvar</button>
+                        </div><!--btns-form-add-ramal-->
+                        
+
+                        <!--
+                        <div class="nice-form-group">
+                          <label>Url</label>
+                          <input type="url" placeholder="www.google.com" value="" />
+                        </div>    E-MAIL-->
+                        
+                        <!-- 
+                        <div class="nice-form-group">
+                          <label>Password</label>
+                          <input type="password" placeholder="Your password" />
+                        </div> PASSWORD-->
+                  
+                        <!-- 
+                        <div class="nice-form-group">
+                          <label>Search</label>
+                          <input type="search" placeholder="Search all the things" value="" />
+                        </div> SEARCH-->
+                  
+                        <!-- 
+                        <div class="nice-form-group">
+                          <label>Disabled field</label>
+                          <input type="text" disabled placeholder="Your name" value="" />
+                        </div>  DESABILITADO-->
+
+                    <button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
+                </dialog>
+
+        </div><!--container-search-box-certer-->
+    </div><!--container-search-box-->
+
+
+<!------------------------------------------------------------------------------------------------>
+
+        <!--TABLE - RAMAIS --------------------------------------------------------------->
+
+        <div class="container-table-ramais">
+            <div class="table-ramais">
+                <table>
+                    <!--Table - Ramais - Cabeçalho ========-->
+                    <thead>
+                        <tr>
+                        <th>Contato</th>
+                        <th>Setor</th>
+                        <th>Ramal 1</th>
+                        <th>Ramal 2</th>
+                        <th>Ramal 3</th>
+                        <th>Ações</th>
+                        
+                        </tr>
+                    <thead>
+
+                        <!--Table - Ramais - linhas ========-->
+                    <tbody>
+                        <tr>
+                        <td>
+                            <div class="ramais-contato-info">
+
+                                <div class="ramais-img-contato">
+                                    <img src="../assets/icons/inicio/sao-lucas-icon.png">
+                                </div><!--ramais-img-contato-->
+
+                                <div class="ramais-nm-contato">
+                                    <p><strong>NTI</strong></p>
+                                </div><!--ramais-nm-contato-->
+
+                            </div><!--ramais-contato-info-->
+                        </td>
+                        <td>
+                        <div class="ramais-desc-setor">
+                            <p>Núcleo de Técnologia da informação</p>
+                            <small>Coordenação</small>
+                        </div><!--ramais-desc-setor-->
+                        </td>
+                        <td><strong>7624</strong></td>
+                        <td>7623</td>
+                        <td></td>
+                        <td>
+                            <div class="btn-actions-ramais">
+                                <div class="btn-icon-editar-ramal">
+                                    <i class="gg-options"></i>
+                                </div><!--btn-icon-editar-ramal-->
+
+                                <div class="btn-icon-excluir-ramal">
+                                    <i class="gg-trash"></i>
+                                </div><!--btn-icon-excluir-ramal-->
+                                
+                                
+                            </div><!--btn-options-ramais-->
+                        </td>
+                        </tr>
+                    </tbody>
+            </table>
+
+        </div><!--table-ramais-->
+    </div><!--container-table-ramais-->
+<!------------------------------------------------------------------------------------------------>
+
+
+    <script src="../js/script.js"></script>
+    <script src="../js/clima.js"></script>
+    <script src="../js/add-ramais.js"></script>
+
+</body>
+</html>

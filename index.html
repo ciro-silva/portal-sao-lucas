@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"> 
+
+	<head>
+		<meta charset="UTF-8"/> 
+		<title>Portal São Lucas - Início</title> 
+		<link href="./css/style.css" rel="stylesheet"/> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<script src="https://kit.fontawesome.com/4cb80f45e5.js" crossorigin="anonymous"></script> 
+		<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="shortcut icon" href="./assets/icons/inicio/sao-lucas-fav.png"> 
+	</head>
+	
+<body>
+    
+<!--TOP-------------------------------------------------------------------------->
+
+    <div class="container-top">
+
+        <div class="container-top-items">
+
+            <div class="container-top-items-left">
+                <!--LOGO PORTAL SÃO LUCAS ================-->
+                <div class="logo-portal">
+                    <a href="./index.html">
+                    <img src="./assets/logo-portal-sao-lucas.png" alt="logo do portal" class="logo">
+                    </a>
+                </div><!--logo-portal-->
+    
+                <!--BARRA DE PESQUISA ================-->
+                <div class="search-box">
+                    <input type="text" placeholder="Pesquisar...">
+                    <i class='bx bx-search' ></i>
+                </div>
+            </div><!--container-top-items-left-->    
+
+            <div class="container-top-items-right">
+                <!--LOGOS SÃO LUCAS E REDE DOR ================-->
+                <div class="logos">
+
+                    <div class="container-logos">
+
+                        <a id="logo-sao-lucas" href="https://www.rededorsaoluiz.com.br/hospital/sao-lucas" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/logo-sao-lucas.png" alt="logo do portal">
+                        </a>
+                        <a href="https://www.rededorsaoluiz.com.br/" target="_blank" rel="noopener noreferrer">
+                            <img src="./assets/logo-rede-dor .png" alt="logo do portal">
+                        </a>
+                    </div><!--container-logos-->
+                    
+                </div><!--logos-->
+    
+                <!--CARD INFO ================-->
+                <div class="card-info">
+                    <div class="card-info-items">
+
+                        <div class="timer">
+                            <h1 id="horas">22</h1>
+                            <h1 id="pontos">:</h1>
+                            <h1 id="minutos">22</h1>
+                        </div><!--timer-->
+
+                        <div class="clima" id="temperatura">
+                            <h1 class="city"></h1>
+                            <h2><span id="temp"></span>°C<span id='umidad'> um</span></h2>
+                        </div><!--clima-->
+
+                    </div><!--card-info-items-->
+                </div><!--card-info-->  
+
+            </div><!--container-top-items-right-->
+            
+        </div><!--container-top-items-->
+
+    </div><!--container-top-->
+
+<!--PAINEL-TOP------------------------------------------------------------------------------------>
+    <!--PAINEL TOP ================-->
+    <div class="container-painel-top">
+
+        <div class="painel-Card">
+
+            <div class="painel-itens-left">
+                <p class="painel-Title">Olá, tudo bem?</p>
+                <p class="painelDesc">Esse é o <strong>Portal São Lucas</strong>, onde você poderá se conectar facilmente a todas as 
+                    ferramentas utilizadas na instituição. <br><strong>Ainda estamos em processo de desenvolvimento, tenha paciêcia!</strong></p>
+                <a href="./blog.html">    
+                    <button class="btn-leiaMais">Leia mais</button>
+                </a>
+            </div><!--painel=itens-left-->
+
+            <div class="painel-itens-right">
+                <div class="painel-img">
+                    <img src="./assets/home-img-top.png" alt="logo do portal" target="_blank" rel="noopener noreferrer">
+                </div><!--painel-img-->
+            </div><!--painel=itens-right-->
+
+          </div><!--painel-Card-->
+          
+    </div><!--container-painel-top-->
+
+<!--TABS ------------------------------------------------------------------------------------------->
+
+    <!--TABS ===================================-->
+    <div class="container-tabs">
+
+        <div class="container">
+            <div class="tabs">
+                <input type="radio" id="radio-1" name="tabs" checked />
+                <label class="tab" for="radio-1">Início</label>
+
+                <label class="tab" for="radio-2">Utilitários</label>
+                <input type="radio" id="radio-2" name="tabs" onclick="tabNavgationUtilitarios()"/>
+          
+                <label class="tab" for="radio-3">Blog</label>
+                <input type="radio" id="radio-3" name="tabs" onclick="tabNavgationBlog()"/>
+                
+
+                <span class="glider"></span>
+            </div>
+        </div>
+
+    </div><!--container-tabs-->
+
+<!--CARDS LINK ------------------------------------------------------------------------------------>
+    <!--LINKS - CABECALHO =======================-->
+
+        <div class="container-links">
+
+            <div class="container-links-cabecalho">
+
+                <p class="title">Sistemas internos</p>
+                <p class="message">Listagem dos sistemas utilizados na unidade, basta clicar em<br> um dos itens e você será redirecionado(a) ao ambiente.</p>
+
+            </div><!--container-links-cabecalho-->
+
+        </div><!--container-links-->
+
+        <!--LINKS - CARDS =======================-->
+    
+        <div class="container-geral-cards">
+            <div class="container-cards">
+
+                <!--LINK - TASY =======================-->
+                <div class="container-card-link">
+                        <a href="http://hissaolucasse.rededor.corp/#/login" target="_blank" rel="noopener noreferrer">
+                            <div class="card-link-img">
+                                <div class="card-link-img-icon">
+                                    <img src="./assets/icons/inicio/Tasy-icon.png" alt="logo do Tasy Philips">
+                                </div><!--card-link-img-icon-->
+                            </div><!--card-link-img-->
+
+                            <div class="card-desc">
+                                <div class="card-title-link">
+                                    <p>Tasy</p>
+                                </div><!--card-title-->
+    
+                                <div class="card-desc-link">
+                                    <p>Sistema de Gestão Hospitalar <strong>(Produção)</strong></p>
+                                </div><!--card-title-->
+                            </div><!--card-desc-->
+                        </a>
+                </div><!--container-card-link-->
+
+
+                <!--LINK - SÃO LUCAS =======================-->
+                <div class="container-card-link">
+                    <a href="https://www.rededorsaoluiz.com.br/hospital/sao-lucas" target="_blank" rel="noopener noreferrer">
+                        <div class="card-link-img">
+                            <div class="card-link-img-icon">
+                                <img src="./assets/icons/inicio/sao-lucas-icon.png" alt="logo do Hospital Memorial Arthur Ramos">
+                            </div><!--card-link-img-icon-->
+                        </div><!--card-link-img-->
+
+                        <div class="card-desc">
+                            <div class="card-title-link">
+                                <p>São Lucas</p>
+                            </div><!--card-title-->
+
+                            <div class="card-desc-link">
+                                <p>Site institucional do <strong>Hospital São Lucas.</strong></p>
+                            </div><!--card-title-->
+                        </div><!--card-desc-->
+                    </a>
+                </div><!--container-card-link-->
+
+
+                <!--LINK - SERVICENOW =======================-->
+                <div class="container-card-link">
+                    <a href="https://rdslprod.service-now.com/snow?id=snow_index" target="_blank" rel="noopener noreferrer">
+                        <div class="card-link-img">
+                            <div class="card-link-img-icon">
+                                <img src="./assets/icons/inicio/servicenow-icon.png" alt="logo do ServiceNow">
+                            </div><!--card-link-img-icon-->
+                        </div><!--card-link-img-->
+
+                        <div class="card-desc">
+                            <div class="card-title-link">
+                                <p>ServiceNow</p>
+                            </div><!--card-title-->
+
+                            <div class="card-desc-link">
+                                <p>Sistema de abertura de Chamados para a <strong>TI.</strong></p>
+                            </div><!--card-title-->
+                                </div><!--card-desc-->
+                            </a>
+                    </div><!--container-card-link-->
+
+
+                    <!--LINK - EFFORT =======================-->
+                    <div class="container-card-link">
+                        <a href="https://rededorpcm.globalthings.net/Login.aspx" target="_blank" rel="noopener noreferrer">
+                            <div class="card-link-img">
+                                <div class="card-link-img-icon">
+                                    <img src="./assets/icons/inicio/effort-icon.png" alt="logo do Effort">
+                                </div><!--card-link-img-icon-->
+                            </div><!--card-link-img-->
+
+                            <div class="card-desc">
+                                <div class="card-title-link">
+                                    <p>Effort</p>
+                                </div><!--card-title-->
+
+                                <div class="card-desc-link">
+                                    <p>Sistema de abertura de Chamados para a <strong>Manutenção.</strong></p>
+                                </div><!--card-title-->
+                            </div><!--card-desc-->
+                        </a>
+                </div><!--container-card-link-->
+
+
+                <!--LINK - WEBHIS =======================-->
+                <div class="container-card-link">
+                    <a href="https://webris.app.rededor.com.br/login" target="_blank" rel="noopener noreferrer">
+                        <div class="card-link-img">
+                            <div class="card-link-img-icon">
+                                <img src="./assets/icons/inicio/webris-icon.png" alt="logo do sistema">
+                            </div><!--card-link-img-icon-->
+                        </div><!--card-link-img-->
+    
+                        <div class="card-desc">
+                            <div class="card-title-link">
+                                <p>Web Ris - ONCOLOGIA</p>
+                            </div><!--card-title-->
+    
+                            <div class="card-desc-link">
+                                <p>xxxxxxxxxxxxxxxxx <strong>xxxxxxxxxxxxxx</strong></p>
+                            </div><!--card-title-->
+                        </div><!--card-desc-->
+                    </a>
+                </div><!--container-card-link-->
+
+
+                <!--LINK - OUTLOOK =======================-->
+                <div class="container-card-link">
+                    <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=15&ct=1688997459&rver=7.0.6737.0&wp=MBI_SSL&wreply=https%3a%2f%2foutlook.live.com%2fowa%2f%3fnlp%3d1%26RpsCsrfState%3d937bea47-8662-8cce-5a63-da6e5023b37f&id=292841&aadredir=1&CBCXT=out&lw=1&fl=dob%2cflname%2cwld&cobrandid=90015" target="_blank" rel="noopener noreferrer">
+                        <div class="card-link-img">
+                            <div class="card-link-img-icon">
+                                <img src="./assets/icons/inicio/outlook-icon.png" alt="logo do Outlook">
+                            </div><!--card-link-img-icon-->
+                        </div><!--card-link-img-->
+
+                        <div class="card-desc">
+                            <div class="card-title-link">
+                                <p>Outlook</p>
+                            </div><!--card-title-->
+
+                            <div class="card-desc-link">
+                                <p>Servidor de e-mail <strong>Corporativo.</strong></p>
+                            </div><!--card-title-->
+                        </div><!--card-desc-->
+                    </a>
+                </div><!--container-card-link-->
+
+
+                <!--LINK - TROCA SENHA =======================-->
+            <div class="container-card-link">
+                <a href="https://trocasenha.rededor.com.br/RDWeb/Pages/en-us/password.aspx" target="_blank" rel="noopener noreferrer">
+                    <div class="card-link-img">
+                        <div class="card-link-img-icon">
+                            <img src="./assets/icons/inicio/troca-senha-icon.png" alt="logo do Tasy Philips">
+                        </div><!--card-link-img-icon-->
+                    </div><!--card-link-img-->
+
+                    <div class="card-desc">
+                        <div class="card-title-link">
+                            <p>Troca Senha - Rede Do'r</p>
+                        </div><!--card-title-->
+
+                        <div class="card-desc-link">
+                            <p>Alteração de senha da rede <strong>Corporativa</strong></p>
+                        </div><!--card-title-->
+                    </div><!--card-desc-->
+                </a>
+            </div><!--container-card-link-->
+
+
+                <!--LINK - MICROSOFT TEAMS =======================-->
+            <div class="container-card-link">
+                <a href="https://www.microsoft.com/pt-br/microsoft-teams/log-in" target="_blank" rel="noopener noreferrer">
+                    <div class="card-link-img">
+                        <div class="card-link-img-icon">
+                            <img src="./assets/icons/inicio/microsoft-teams-icon.png" alt="">
+                        </div><!--card-link-img-icon-->
+                    </div><!--card-link-img-->
+
+                    <div class="card-desc">
+                        <div class="card-title-link">
+                            <p>Microsoft Teams</p>
+                        </div><!--card-title-->
+
+                        <div class="card-desc-link">
+                            <p>Plataforma de comunicação da rede <strong>Corporativa</strong></p>
+                        </div><!--card-title-->
+                    </div><!--card-desc-->
+                </a>
+            </div><!--container-card-link-->
+
+
+            <!--LINK - GEDPEP - ONCOLOGIA DOR =======================-->
+            <div class="container-card-link">
+                <a href="http://ged.oncologiador.corp/prontuario/" target="_blank" rel="noopener noreferrer">
+                    <div class="card-link-img">
+                        <div class="card-link-img-icon">
+                            <img src="./assets/icons/inicio/gedpep-icon.png" alt="logo do sistema">
+                        </div><!--card-link-img-icon-->
+                    </div><!--card-link-img-->
+
+                    <div class="card-desc">
+                        <div class="card-title-link">
+                            <p>GEDPEP - ONCOLOGIA</p>
+                        </div><!--card-title-->
+
+                        <div class="card-desc-link">
+                            <p>Prontuário Eletrônico da <strong>Oncologia D'or</strong></p>
+                        </div><!--card-title-->
+                    </div><!--card-desc-->
+                </a>
+            </div><!--container-card-link-->
+
+            <!--LINK - PEP - ONCOLOGIA =======================-->
+            <div class="container-card-link">
+                <a href="https://pep.oncologiador.com.br/login?returnUrl=%2Findex" target="_blank" rel="noopener noreferrer">
+                    <div class="card-link-img">
+                        <div class="card-link-img-icon">
+                            <img src="./assets/icons/inicio/pep-oncologia-icon.png" alt="logo do sistema">
+                        </div><!--card-link-img-icon-->
+                    </div><!--card-link-img-->
+
+                    <div class="card-desc">
+                        <div class="card-title-link">
+                            <p>PEP - ONCOLOGIA</p>
+                        </div><!--card-title-->
+
+                        <div class="card-desc-link">
+                            <p>Prontuário Eletrônico da <strong>Oncologia D'or</strong></p>
+                        </div><!--card-title-->
+                    </div><!--card-desc-->
+                </a>
+            </div><!--container-card-link-->
+
+<!----------LINKS DA ONCOLOGIA----------------------------------------------------------------------------------------->
+                      
+            <div class="footer-divider">
+            </div><!--footer-divider-->
+
+            <div class="container-links">
+
+                <div class="container-links-cabecalho-oncologia">
+
+                    <p id="title2" class="title">Oncologia</p>
+                    
+                </div><!--container-links-cabecalho-->
+
+            </div><!--container-links-->
+
+            
+            <!--LINK - =======================-->
+            <div class="container-card-link invisible">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="card-link-img">
+                        <div class="card-link-img-icon">
+                            <img src="./assets/icons/inicio/" alt="">
+                        </div><!--card-link-img-icon-->
+                    </div><!--card-link-img-->
+
+                    <div class="card-desc">
+                        <div class="card-title-link">
+                            <p></p>
+                        </div><!--card-title-->
+
+                        <div class="card-desc-link">
+                            <p> <strong></strong></p>
+                        </div><!--card-title-->
+                    </div><!--card-desc-->
+                </a>
+            </div><!--container-card-link-->
+
+
+            <!--LINK - =======================-->
+            <div class="container-card-link invisible">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="card-link-img">
+                        <div class="card-link-img-icon">
+                            <img src="./assets/icons/inicio/" alt="">
+                        </div><!--card-link-img-icon-->
+                    </div><!--card-link-img-->
+
+                    <div class="card-desc">
+                        <div class="card-title-link">
+                            <p></p>
+                        </div><!--card-title-->
+
+                        <div class="card-desc-link">
+                            <p> <strong></strong></p>
+                        </div><!--card-title-->
+                    </div><!--card-desc-->
+                </a>
+            </div><!--container-card-link-->
+
+
+            <!--LINK - =======================-->
+            <div class="container-card-link invisible">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="card-link-img">
+                        <div class="card-link-img-icon">
+                            <img src="./assets/icons/inicio/" alt="">
+                        </div><!--card-link-img-icon-->
+                    </div><!--card-link-img-->
+
+                    <div class="card-desc">
+                        <div class="card-title-link">
+                            <p></p>
+                        </div><!--card-title-->
+
+                        <div class="card-desc-link">
+                            <p> <strong></strong></p>
+                        </div><!--card-title-->
+                    </div><!--card-desc-->
+                </a>
+            </div><!--container-card-link-->
+            
+
+            <!--LINK - =======================-->
+            <div class="container-card-link invisible">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="card-link-img">
+                        <div class="card-link-img-icon">
+                            <img src="./assets/icons/inicio/" alt="">
+                        </div><!--card-link-img-icon-->
+                    </div><!--card-link-img-->
+
+                    <div class="card-desc">
+                        <div class="card-title-link">
+                            <p></p>
+                        </div><!--card-title-->
+
+                        <div class="card-desc-link">
+                            <p> <strong></strong></p>
+                        </div><!--card-title-->
+                    </div><!--card-desc-->
+                </a>
+            </div><!--container-card-link-->
+
+            <!--LINK -  =======================-->
+            <div class="container-card-link invisible">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="card-link-img">
+                        <div class="card-link-img-icon">
+                            <img src="./assets/icons/inicio/" alt="">
+                        </div><!--card-link-img-icon-->
+                    </div><!--card-link-img-->
+
+                    <div class="card-desc">
+                        <div class="card-title-link">
+                            <p></p>
+                        </div><!--card-title-->
+
+                        <div class="card-desc-link">
+                            <p> <strong></strong></p>
+                        </div><!--card-title-->
+                    </div><!--card-desc-->
+                </a>
+            </div><!--container-card-link-->
+
+                </div><!--container-card-link-->
+
+            </div><!--card-links-items-->
+        </div><!--container-card-links-->
+
+        
+
+        <!--FOOTER =======================-->
+        <footer>
+            <div class="container-footer">
+                <div class="footer-items">
+
+                    <div class="footer-divider">
+                    </div><!--footer-divider-->
+                    <div class="footer-ass">
+                        <p>Desenvolvido pelo<br> <strong>Núcleo de Tecnologia da Informação</strong><br> do Hospital São Lucas</p>
+                    </div><!--footer-ass-->
+
+                </div><!--footer-items-->
+            </div><!--container-footer-->
+        </footer>
+        
+    <script src="./js/script.js"></script>
+    <script src="./js/clima.js"></script>
+
+</body>
+</html>
